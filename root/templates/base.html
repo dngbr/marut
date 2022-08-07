@@ -1,0 +1,240 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--METAS-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- PREVIEW -->
+    <meta property="og:site_name" content="Marut">
+    <meta property="og:title" content="Ferestre și uși">
+    <meta property="og:description" content="Un pas în plus către visul tău!">
+    <!-- IMAGE TO DISPLAY -->
+    <meta property="og:image" itemprop="image" content="{% static 'images/title.png' %}">
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:url" content="http://marut.ro">
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+    <!-- ICON -->
+    <link rel="icon" type="image/png" sizes="16x16 32x32" href="{% static 'images/icon.png' %}" />
+    <!-- STYLE.CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <title>Marut</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img alt="Brand" src="{% static 'images/logo.png'%}" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img src="{% static 'images/menu.png' %}" /></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Acasă</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/despre/" class="nav-link">Despre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/servicii/" class="nav-link">Servicii</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/produse/" class="nav-link">Produse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/blog/" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact/" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- BANNER -->
+    <div class="banner">
+        <div class="container">
+            <div class="carousel slide" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item banner-slide active">
+                        <div class="banner-slide-content text-center">
+                            <h1>MARUT</h1>
+                            <hr width="100%" size="2" color="white" />
+                            <h2>Ferestre și uși</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item banner-slide">
+                        <div class="banner-slide-content text-center">
+                            <h1>MARUT</h1>
+                            <hr width="100%" size="5" color="white" />
+                            <h2>Un pas în plus către visul tău!</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div class="about-preview">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2 class="title">Despre noi</h2>
+                    <p class="paragraph">
+                        Din anul 2012, din județul Cluj, împlinim visurile clienților
+                        noștri: transformăm o casă într-un cămin. Acum, la a doua
+                        generație…
+                    </p>
+                    <a class="btn buton" href="#">Citește mai mult</a>
+                </div>
+                <div class="col-lg-7">
+                    <img class="img-responsive rounded" src="{% static 'images/aboutPreview.png'%}" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PRODUCTS -->
+    <div class="products-preview">
+        <div class="container">
+            <h2 class="title text-center">Produsele noastre</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <a class="card products-preview-card" href="#">
+                        <img class="img-responsive" src="{% static 'images/usi.png' %}" />
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a class="card products-preview-card" href="#">
+                        <img class="img-responsive" src="{% static 'images/ferestre.png' %}" />
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a class="card products-preview-card" href="#">
+                        <img class="img-responsive" src="{% static 'images/rulouri.png' %}" />
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a class="card products-preview-card" href="#">
+                        <img class="img-responsive" src="{% static 'images/accesories.png'%}" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SEND US A MESSAGE -->
+    <div class="contact-preview">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="title">Contactează-ne</h2>
+                    <p class="paragraph">
+                        Trimite-ne un mesaj și noi îți vom răspunde în cel mai scurt timp!
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <form action="{% url 'home' %}" method="post" id="contact" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input class="contact-form-field" placeholder="Nume" type="text" name="message-name" />
+                            </div>
+                            <div class="col-md-12">
+                                <input class="contact-form-field" placeholder="Numărul de Telefon" type="text"
+                                    name="message-phone" />
+                            </div>
+                            <div class="col-md-12">
+                                <input class="contact-form-field" placeholder="Email" type="email"
+                                    name="message-email" />
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="contact-form-textarea" placeholder="Mesaj" type="text"
+                                    name="message"></textarea>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="buton2">Trimite</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- REVIEWs -->
+    <div class="review">
+        <div class="container text-center">
+            <h2 class="title text-center">Review-urile clientilor nostrii</h2>
+            <img src="{% static 'images/review.png' %}" alt="" class="img-responsive text-center">
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer-banner"></div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <img src="{% static 'images/logopng.png' %}" width="40%">
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="/produse/">Produse</a><br />
+                    <a href="/servicii/">Servicii</a><br />
+                    <!--<a href="/blog/">Blog</a><br />-->
+                </div>
+                <div class="col-md-3 text-center">
+                    <!--<a href="/termeni/">Termeni și condiții</a><br />-->
+                    <!--<a href="/cookies/">Politică cookies</a><br />-->
+                    <a href="https://anpc.ro/" target="_blank">ANPC</a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a style="color:#ebce09">Date de contact</a><br />
+                    <a href="tel:+40-771-420-554" data-tracking-element-type="3" jslog="56037; track:impression,click"
+                        itemprop="telephone" dir="ltr" style="color: white">0771.420.554</a><br />
+                    <a href="mailto:suport.marut@gmail.com" style="color: white">
+                        suport.marut@gmail.com </a><br />
+                    <a href="https://goo.gl/maps/WHejeYgqQGA35mir5" target="_blank" data-tracking-element-type="6"
+                        jslog="56039; track:impression,click" style="color: white">Turda, Cluj</a>
+                    <br />
+                </div>
+            </div>
+            <div class="row socials" style="margin-top: 40px">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 text-center">
+                    <a class="btn btn-outline-light btn-floating m-1 social" href=https://www.facebook.com/marutplast/
+                        target="_blank" role="button"><i class="fa fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1 social" href=https://www.instagram.com/marutplast/
+                        target="_blank" role="button"><i class="fa fa-instagram"></i></a>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-12 text-center copyright">
+                    Marut Plast © 2022 <p style="opacity: 0.1">Made by Bitzu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
