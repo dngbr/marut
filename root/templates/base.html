@@ -32,9 +32,11 @@
 
 <body>
     <!-- NAVBAR -->
+   <!--navbar-->
+   <div class="navbar-container">  
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="/"><img alt="Brand" src="{% static 'images/logo.png'%}" /></a>
+            <a class="navbar-brand" href="/"><img alt="Brand" src="{% static 'images/logo.png' %}" class="logo"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span><img src="{% static 'images/menu.png' %}" /></span>
@@ -63,84 +65,75 @@
             </div>
         </div>
     </nav>
+</div>
     {% block main %}
     <!-- BANNER -->
     <div class="banner">
         <div class="container">
-            <div class="carousel slide" data-ride="carousel" data-interval="5000">
+            <div class="carousel slide" data-ride="carousel" data-interval="3000">
                 <div class="carousel-inner">
-                    <div class="carousel-item banner-slide active">
-                        <div class="banner-slide-content text-center">
-                            <h1>MARUT</h1>
-                            <hr width="100%" size="2" color="white" />
-                            <h2>Ferestre și uși</h2>
+                    <div class="carousel-item active">
+                        <div class="text-center content">
+                            <h2>MARUT</h2>
+                            <hr/>
+                            <h3>Ferestre și uși</h3>
                         </div>
                     </div>
-                    <div class="carousel-item banner-slide">
-                        <div class="banner-slide-content text-center">
-                            <h1>MARUT</h1>
-                            <hr width="100%" size="5" color="white" />
-                            <h2>Un pas în plus către visul tău!</h2>
+                    <div class="carousel-item">
+                        <div class="text-center content">
+                            <h2>MARUT</h2>
+                            <hr/>
+                            <h3>Un pas în plus către visul tău!</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ABOUT -->
-    <div class="about-preview">
+    <!--about us -->
+    <div class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
-                    <h2 class="title">Despre noi</h2>
-                    <p class="paragraph">
-                        Din anul 2012, din județul Cluj, împlinim visurile clienților
-                        noștri: transformăm o casă într-un cămin. Acum, la a doua
-                        generație…
-                    </p>
+                <div class="col-md-5">
+                    <h2>Despre noi</h2>
+                    <p>Din anul 2012, din județul Cluj, împlinim visurile clienților
+                    noștri: transformăm o casă într-un cămin. Acum, la a doua
+                    generație…</p>
                     <a class="btn buton" href="#">Citește mai mult</a>
                 </div>
-                <div class="col-lg-7">
-                    <img class="img-responsive rounded" src="{% static 'images/aboutPreview.png'%}" />
+                <div class="col-md-7">
+                    <img class="img-responsive rounded" src="{% static 'images/aboutPreview.png' %}" />
                 </div>
             </div>
         </div>
     </div>
-    <!-- PRODUCTS -->
-    <div class="products-preview">
+    <!-- products -->
+    <div class="products">
         <div class="container">
-            <h2 class="title text-center">Produsele noastre</h2>
+            <h2 class="text-center">Produsele noastre</h2>
             <div class="row">
-                <div class="col-md-6">
-                    <a class="card products-preview-card" href="#">
-                        <img class="img-responsive" src="{% static 'images/usi.png' %}" />
-                    </a>
+                <div class="col-sm-6">
+                    <a href="#"><img src="{% static 'images/ferestre.png' %}" alt="" class="img-responsive"></a>
                 </div>
-                <div class="col-md-6">
-                    <a class="card products-preview-card" href="#">
-                        <img class="img-responsive" src="{% static 'images/ferestre.png' %}" />
-                    </a>
+                <div class="col-sm-6">
+                    <a href="#"><img src="{% static 'images/usi.png' %}" alt="" class="img-responsive"></a>
                 </div>
-                <div class="col-md-6">
-                    <a class="card products-preview-card" href="#">
-                        <img class="img-responsive" src="{% static 'images/rulouri.png' %}" />
-                    </a>
+                <div class="col-sm-6">
+                    <a href="#"><img src="{% static 'images/rulouri.png' %}" alt="" class="img-responsive"></a>
                 </div>
-                <div class="col-md-6">
-                    <a class="card products-preview-card" href="#">
-                        <img class="img-responsive" src="{% static 'images/accesories.png'%}" />
-                    </a>
+                <div class="col-sm-6">
+                    <a href="#"><img src="{% static 'images/accesories.png' %}" alt="" class="img-responsive"></a>
                 </div>
             </div>
         </div>
     </div>
     <!-- SEND US A MESSAGE -->
-    <div class="contact-preview">
+    <div class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2 class="title">Contactează-ne</h2>
-                    <p class="paragraph">
+                    <h2>Contactează-ne</h2>
+                    <p>
                         Trimite-ne un mesaj și noi îți vom răspunde în cel mai scurt timp!
                     </p>
                 </div>
@@ -148,7 +141,7 @@
                     <form action="{% url 'home' %}" method="post" id="contact" class="contact-form">
                         {% csrf_token %}
                         {{form.as_p}}
-                        <input type="submit" value="Trimite" class="btn btn-success buton2">
+                        <input type="submit" value="Trimite" class="btn buton2">
                     </form>
                 </div>
             </div>
@@ -202,11 +195,8 @@
                 <div class="col-sm-4"></div>
             </div>
             <hr />
-            <div class="row">
-                <div class="col-md-12 text-center copyright">
-                    Marut Plast © 2022 <p style="opacity: 0.1">Made by Bitzu</p>
-                </div>
-            </div>
+            <p class="text-center">Marut Plast © 2022 </p>
+            <p class="text-center" style="opacity: 0.1;font-size:0.5rem">Made by Bitzu</p>
         </div>
     </div>
     <!-- Optional JavaScript -->
