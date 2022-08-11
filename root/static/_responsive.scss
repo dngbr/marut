@@ -20,6 +20,12 @@
             width: 100%;
         }
     }
+    .contact {
+        .content {
+            padding-top:2rem!important;
+            padding-left:2rem!important;
+        }
+    }
 }
 @media screen and (max-width:600px) {
     .buton {
@@ -27,5 +33,9 @@
     }
     .footer-banner {
         min-height: 10vh;
+    }
+    .contact {
+        width: 90%;
+        margin:0 auto;
     }
 }

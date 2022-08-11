@@ -29,7 +29,7 @@ h2 {
 }
 
 p {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(0.75rem, 2vw, 1.5rem);
   font-weight: 600;
 }
 
@@ -216,6 +216,10 @@ p {
   .review img {
     width: 100%;
   }
+  .contact .content {
+    padding-top: 2rem !important;
+    padding-left: 2rem !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .buton {
@@ -224,4 +228,27 @@ p {
   .footer-banner {
     min-height: 10vh;
   }
+  .contact {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.about-page img {
+  border: 0.25rem solid var(--clr-accent-2);
+}
+.about-page .carousel {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-card {
+  margin-bottom: 3rem;
+}
+.contact-card .row {
+  background-color: var(--clr-accent);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.contact-card .content {
+  padding-top: 5rem;
 }/*# sourceMappingURL=style.css.map */

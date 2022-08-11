@@ -1,0 +1,11 @@
+.contact-card {
+    margin-bottom: 3rem;
+    .row {
+        background-color: var(--clr-accent);
+        border-radius: 2rem;
+        overflow: hidden;
+    }
+    .content {
+        padding-top:5rem;
+    }
+}

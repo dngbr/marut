@@ -24,7 +24,7 @@ h2 {
     color: var(--clr-bg-dark);
 }
 p {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(0.75rem, 2vw, 1.5rem);
     font-weight: 600;
 }
 .buton {
@@ -61,3 +61,5 @@ p {
 }
 @import 'home';
 @import 'responsive';
+@import 'about';
+@import 'contact';

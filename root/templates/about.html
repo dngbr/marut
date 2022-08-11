@@ -1,17 +1,10 @@
 {% extends "base.html" %} {% load static %} {% block main %}
 <div class="about-page">
   <div class="container" style="padding-top: 25px">
-    <h1 class="title text-center">Află povestea noastră</h1>
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <p class="paragraph text-center">
-          Din anul 2012, din județul Cluj, împlinim visurile clienților noștri: transformăm o casă într-un cămin. Acum, la a doua generație, vrem să răspândim calitatea care ne-a consacrat la nivel național și internațional. Pentru că suntem de părere că o casă nu e acasă, fără produse și lucrări de calitate.
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-1"></div>
-      <div class="col-lg-10 text-center">
+    <h2 class="text-center">Află povestea noastră</h2>
+    <p class="text-center">
+    Din anul 2012, din județul Cluj, împlinim visurile clienților noștri: transformăm o casă într-un cămin. Acum, la a doua generație, vrem să răspândim calitatea care ne-a consacrat la nivel național și internațional. Pentru că suntem de părere că o casă nu e acasă, fără produse și lucrări de calitate.
+    </p>
         <div
           id="about-carousel"
           class="carousel slide"
@@ -35,9 +28,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    </div>
   </div>
   <div
     style="background-color: #f2f2f2; padding-top: 25px; padding-bottom: 25px"
@@ -69,19 +59,23 @@
     </div>
   </div>
 </div>
-<div style="background-color: #f2f2f2" class="contactdiv">
+<div class="contact-card">
   <div class="container">
-    <div class="card contact-us-card">
-      <div class="contact-us-content">
-        <p class="paragraph">
-          Pentru mai multe informații sau nelămuriri legate de serviciile de
-          tâmplărie PVC sau aluminiu, poți lua oricând legătura cu echipa
-          noastră telefonic sau prin e-mail.
-        </p>
-        <a class="btn buton" href="/contact/">Contactează-ne</a>
+      <div class="row">
+          <div class="col-sm-7">
+              <img class="img-responsive rounded" src="{% static 'images/contactUs.png' %}" />
+          </div>
+          <div class="col-sm-5">
+            <div class="content">
+            <p>
+              Pentru mai multe informații sau nelămuriri legate de serviciile de
+              tâmplărie PVC sau aluminiu, poți lua oricând legătura cu echipa
+              noastră telefonic sau prin e-mail.
+            </p>
+            <a class="btn buton" href="/contact/">Contactează-ne</a>
+          </div>
+          </div>
       </div>
-      <img class="contact-us-image img-responsive" src="{% static 'images/serviceRadu.png' %}" />
-    </div>
   </div>
 </div>
 {% endblock main %}
