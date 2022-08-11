@@ -14,7 +14,7 @@ class EmailForm(ModelForm):
         }
         widgets = {
             'nume':forms.TextInput(attrs={'class':'form-control', 'placeholder':'Numele tău'}),
-            'telefon':forms.TextInput(attrs={'class':'form-control', 'placeholder':'Numărul de telefon'}),
-            'email':forms.EmailInput(attrs={'class':'form-control', 'placeholder':'Email'}),
+            'telefon':forms.TextInput(attrs={'class':'form-control', 'placeholder':'Numărul tău de telefon'}),
+            'email':forms.EmailInput(attrs={'class':'form-control', 'placeholder':'Email-ul tău'}),
             'mesaj':forms.Textarea(attrs={'class':'form-control', 'placeholder':'Mesajul tău'}),
         }
