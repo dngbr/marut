@@ -1,21 +1,22 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
-
+from .forms import EmailForm
 # Create your views here.
 def home(request):
     if request.method == "POST":
-        name = request.POST['message-name']
-        email = request.POST['message-email']
-        phone = request.POST['message-phone']
-        message = request.POST['message']
-        send_mail(
-            'Message from ' + name +
-            '(nr.tel.: ' + phone + '| email: ' + email + ')',  # subiect
-            message,  # mesaj
-            email,  # from email
-            ['suport.marut@gmail.com', 'gabrieldan2399@gmail.com',
-                'razvan_felecan@yahoo.com'],  # to email
-        )
-        return render(request, "base.html", {})
-    else:
-        return render(request, "base.html", {})
+        form = EmailForm(request.POST)
+        if form.is_valid():
+            form.save()
+            send_mail(
+                'Message from ' + form.cleaned_data['nume'] +
+                ' (telefon: ' + form.cleaned_data['telefon'] + '| email: ' + form.cleaned_data['email'] + ')',  # subiect
+                form.cleaned_data['mesaj'],  # mesaj
+                form.cleaned_data['email'],  # from email
+                ['suport.marut@gmail.com', 'gabrieldan2399@gmail.com',
+                    'razvan_felecan@yahoo.com'],  # to email
+            )
+    form = EmailForm
+    return render(request, "base.html", {'form':form})
+
+def about(request):
+    return render(request, "about.html", {})

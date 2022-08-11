@@ -42,10 +42,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="/" class="nav-link">Acasă</a>
+                        <a href="{% url 'home' %}" class="nav-link">Acasă</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/despre/" class="nav-link">Despre</a>
+                        <a href="{% url 'about' %}" class="nav-link">Despre</a>
                     </li>
                     <li class="nav-item">
                         <a href="/servicii/" class="nav-link">Servicii</a>
@@ -63,6 +63,7 @@
             </div>
         </div>
     </nav>
+    {% block main %}
     <!-- BANNER -->
     <div class="banner">
         <div class="container">
@@ -145,26 +146,9 @@
                 </div>
                 <div class="col-lg-6">
                     <form action="{% url 'home' %}" method="post" id="contact" class="contact-form">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <input class="contact-form-field" placeholder="Nume" type="text" name="message-name" />
-                            </div>
-                            <div class="col-md-12">
-                                <input class="contact-form-field" placeholder="Numărul de Telefon" type="text"
-                                    name="message-phone" />
-                            </div>
-                            <div class="col-md-12">
-                                <input class="contact-form-field" placeholder="Email" type="email"
-                                    name="message-email" />
-                            </div>
-                            <div class="col-md-12">
-                                <textarea class="contact-form-textarea" placeholder="Mesaj" type="text"
-                                    name="message"></textarea>
-                            </div>
-                            <div class="col-sm-12">
-                                <button class="buton2">Trimite</button>
-                            </div>
-                        </div>
+                        {% csrf_token %}
+                        {{form.as_p}}
+                        <input type="submit" value="Trimite" class="btn btn-success buton2">
                     </form>
                 </div>
             </div>
@@ -177,6 +161,7 @@
             <img src="{% static 'images/review.png' %}" alt="" class="img-responsive text-center">
         </div>
     </div>
+    {% endblock main %}
     <!-- FOOTER -->
     <div class="footer-banner"></div>
     <div class="footer">

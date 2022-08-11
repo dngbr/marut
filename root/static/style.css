@@ -4,6 +4,9 @@
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
+body {
+  font-size: 62.5%;
+}
 /* 
 -
 -
@@ -29,7 +32,7 @@ img {
   max-width: 100%;
 }
 hr {
-  border-top: 1px solid var(--clr-accent);
+  border-top: 0.2em solid var(--clr-accent);
 }
 .title {
   margin-top: 20px;
@@ -40,6 +43,10 @@ hr {
 .paragraph {
   font-weight: 700;
   font-size: clamp(0.4rem, 4vw, 1.5rem);
+}
+.paragraph2 {
+  font-weight: 300;
+  font-size: clamp(0.2rem, 4vw, 1.2rem);
 }
 .buton {
   cursor: pointer;
@@ -211,7 +218,6 @@ review
 footer 
 - 
 */
-/* FOOTER */
 .footer-banner {
   height: 243px;
   background-image: url(images/cross_bottom.png);
@@ -249,6 +255,29 @@ footer
   padding: 20px;
   font-weight: 500;
   font-size: 15px;
+}
+/*
+-
+about page
+-
+*/
+.about-carousel-slide {
+  border: 4px solid var(--clr-accent);
+}
+/*
+-
+contact us 
+-
+*/
+.contact-card-content {
+  width: 60%;
+  margin: 45px;
+}
+.contact-card-image {
+  position: absolute;
+  height: 600px;
+  top: -125%;
+  left: 65%;
 }
 /*
 -

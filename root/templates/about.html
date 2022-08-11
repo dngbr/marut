@@ -1,0 +1,87 @@
+{% extends "base.html" %} {% load static %} {% block main %}
+<div class="about-page">
+  <div class="container" style="padding-top: 25px">
+    <h1 class="title text-center">Află povestea noastră</h1>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <p class="paragraph text-center">
+          Din anul 2012, din județul Cluj, împlinim visurile clienților noștri: transformăm o casă într-un cămin. Acum, la a doua generație, vrem să răspândim calitatea care ne-a consacrat la nivel național și internațional. Pentru că suntem de părere că o casă nu e acasă, fără produse și lucrări de calitate.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-10 text-center">
+        <div
+          id="about-carousel"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="5000"
+        >
+          <ol class="carousel-indicators">
+            <li data-target="#about-carousel" data-slide-to="0"></li>
+            <li data-target="#about-carousel" data-slide-to="1"></li>
+            <li data-target="#about-carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item about-carousel-slide active">
+              <img src="{% static 'images/about1.jpg' %}" width="100%" />
+            </div>
+            <div class="carousel-item about-carousel-slide">
+              <img src="{% static 'images/about2.jpg' %}" width="100%" />
+            </div>
+            <div class="carousel-item about-carousel-slide">
+              <img src="{% static 'images/about3.jpg' %}" width="100%" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div
+    style="background-color: #f2f2f2; padding-top: 25px; padding-bottom: 25px"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 text-center">
+          <p class="paragraph2">
+            Suntem cei care îți oferă siguranța că geamurile tale vor rezista,
+            că o poți să dormi până la prânz dacă ai nevoie să te odihnești.<br /><br />
+            Suntem o familie care înțelege că primul pas pentru a construi un
+            cămin este calitatea. <br /><br />Suntem cei care nu ne lăsăm
+            înfrânți de un toc vechi sau un pervaz de lemn încăpățânat care nu
+            vrea să fie dat deoparte.<br /><br />
+            Suntem cei care nu fac rabat de la calitate, indiferent de bugetul
+            tău.<br />Suntem cei care te ghidăm pas cu pas să alegi materialele
+            (și culorile) care se pliază perfect pe viziunea pe care o ai tu
+            despre casa ta. <br />Suntem cei care garantăm că vântul nu șuieră,
+            pervazul nu cade și insectele nu vin neinvitate în casă.
+            <br />Suntem cei care reparăm dacă se strică ceva din munca noastră.
+          </p>
+          <p class="paragraph">Suntem MARUT.</p>
+          <p class="paragraph2">Și susținem calitatea înainte de toate.</p>
+          <br />
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="background-color: #f2f2f2" class="contactdiv">
+  <div class="container">
+    <div class="card contact-us-card">
+      <div class="contact-us-content">
+        <p class="paragraph">
+          Pentru mai multe informații sau nelămuriri legate de serviciile de
+          tâmplărie PVC sau aluminiu, poți lua oricând legătura cu echipa
+          noastră telefonic sau prin e-mail.
+        </p>
+        <a class="btn buton" href="/contact/">Contactează-ne</a>
+      </div>
+      <img class="contact-us-image img-responsive" src="{% static 'images/serviceRadu.png' %}" />
+    </div>
+  </div>
+</div>
+{% endblock main %}
