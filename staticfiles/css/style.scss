@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap");
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+:root {
+    --clr-text: #fff;
+    --clr-bg-dark: #12153c;
+    --clr-bg-light: #f2f2f2;
+    --clr-accent: #ffe25b;
+    --clr-accent-2: #ebce09;
+    --clr-accent-3: #d0b608;
+  }
+body {
+    margin:0;
+    font-size: 62.5%;
+}
+img {
+    max-width: 100%;
+}
+h2 {
+    font-size: clamp(1.75rem, 5vw,3rem);
+    font-weight: bold;
+    color: var(--clr-bg-dark);
+}
+h3 {
+    font-size: clamp(1.35rem, 5vw,2rem);
+    font-weight: bold;
+    color: var(--clr-bg-dark);
+}
+p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 600;
+}
+.buton {
+    padding: 0.65rem 1rem;
+    background-color: var(--clr-bg-dark);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    color: var(--clr-text);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: ease-in all 0.3s;
+}
+.buton:hover, 
+.buton:focus {
+    background-color: var(--clr-accent-2)!important;
+}
+.buton2 {
+    padding: 0.65rem 1rem;
+    background-color: var(--clr-bg-light);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    color: var(--clr-bg-dark);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: ease-in all 0.3s;
+    max-width: 10rem;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.buton2:hover, 
+.buton2:focus {
+    background-color: var(--clr-accent-2)!important;
+}
+@import 'home';
+@import 'responsive';
+@import 'about';
+@import 'contact';
+@import 'services';

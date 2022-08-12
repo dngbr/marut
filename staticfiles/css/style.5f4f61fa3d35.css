@@ -98,7 +98,7 @@ p {
 }
 
 .banner {
-  background-image: url(../images/banner.png);
+  background-image: url("../images/banner.abc952277041.png");
   background-size: 100% 100%;
   background-position: center;
   padding-bottom: 7rem;
@@ -121,7 +121,7 @@ p {
   font-weight: 600;
 }
 .banner .carousel .carousel-item {
-  background-image: url(../images/produse.jpg);
+  background-image: url("../images/produse.93b12380f98c.jpg");
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -175,7 +175,7 @@ p {
 }
 
 .footer-banner {
-  background-image: url(../images/cross_bottom.png);
+  background-image: url("../images/cross_bottom.be06f50031ef.png");
   background-size: 100% 100%;
   background-position: center;
   min-height: 30vh;
@@ -258,7 +258,7 @@ p {
   overflow: hidden;
 }
 .contact-card .content {
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 .services-page {

@@ -1,0 +1,45 @@
+@media screen and (max-width:990px) {
+    .navbar {
+        width: 100%;
+    }
+    .banner {
+        padding-bottom: 5rem;
+        .carousel {
+            padding: 1rem 1rem;
+            width: 100%;
+            h2 {
+                padding-top: 1rem;
+            }
+        }
+    }
+    .about {
+        width: 100%;
+    }
+    .review {
+        img {
+            width: 100%;
+        }
+    }
+    .contact-card {
+        .content {
+            padding-top: 0.5rem!important;
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .buton {
+        font-size: 0.75rem;
+    }
+    .footer-banner {
+        min-height: 10vh;
+    }
+    .contact {
+        .contact-form {
+            padding:3rem!important;
+        }
+    }
+    .contact-card {
+        width: 90%;
+        margin:0 auto;
+    }
+}
