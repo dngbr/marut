@@ -28,6 +28,12 @@ h2 {
   color: var(--clr-bg-dark);
 }
 
+h3 {
+  font-size: clamp(1.35rem, 5vw, 2rem);
+  font-weight: bold;
+  color: var(--clr-bg-dark);
+}
+
 p {
   font-size: clamp(0.75rem, 2vw, 1.5rem);
   font-weight: 600;
@@ -92,7 +98,7 @@ p {
 }
 
 .banner {
-  background-image: url(images/banner.png);
+  background-image: url(../images/banner.png);
   background-size: 100% 100%;
   background-position: center;
   padding-bottom: 7rem;
@@ -115,7 +121,7 @@ p {
   font-weight: 600;
 }
 .banner .carousel .carousel-item {
-  background-image: url(images/produse.jpg);
+  background-image: url(../images/produse.jpg);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -155,7 +161,7 @@ p {
 .contact .contact-form {
   background-color: var(--clr-bg-dark);
   border-radius: 3rem;
-  padding: 3rem;
+  padding: 4rem;
 }
 
 .review {
@@ -169,7 +175,7 @@ p {
 }
 
 .footer-banner {
-  background-image: url(images/cross_bottom.png);
+  background-image: url(../images/cross_bottom.png);
   background-size: 100% 100%;
   background-position: center;
   min-height: 30vh;
@@ -216,9 +222,8 @@ p {
   .review img {
     width: 100%;
   }
-  .contact .content {
-    padding-top: 2rem !important;
-    padding-left: 2rem !important;
+  .contact-card .content {
+    padding-top: 0.5rem !important;
   }
 }
 @media screen and (max-width: 600px) {
@@ -228,7 +233,10 @@ p {
   .footer-banner {
     min-height: 10vh;
   }
-  .contact {
+  .contact .contact-form {
+    padding: 3rem !important;
+  }
+  .contact-card {
     width: 90%;
     margin: 0 auto;
   }
@@ -251,4 +259,9 @@ p {
 }
 .contact-card .content {
   padding-top: 5rem;
+}
+
+.services-page {
+  background: var(--clr-bg-light);
+  padding: 2rem 0;
 }/*# sourceMappingURL=style.css.map */

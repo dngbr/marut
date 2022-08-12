@@ -1,0 +1,48 @@
+{% extends "base.html" %} {% load static %} {% block main %}
+<div class="services-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">Serviciile noastre</h2>
+                <p class="text-center">Când vine vorba de tâmplăria PVC, suntem o companie care te ducem de la A la Z. 
+                Îți oferim tot ce ai nevoie de la a-ți alege cele mai potrivite ferestre și uși din PVC pentru locuința ta, 
+                până la orice detaliu cât de mic legat de produsele, serviciile noastre.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'images/profil.png' %}" alt="" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container text-center">
+    <h3>Cum se derulează un proces cu MARUT?</h3>
+    <p><b>CONSULTANȚĂ</b>: analizăm și discutăm telefonic, prin e-mail sau față în față toate detaliile proiectului 
+        (măsuratori la fața locului).<br><br>
+        <b>CONTRACTARE</b>: odată stabilite detaliile, pregătim oferta tehnică și contractul de colaborare.<br><br>
+        <b>OFERTARE</b>: plasăm comanda de produse.<br><br>
+        <b>LIVRARE</b>: ne asigurăm că produsele ajung în siguranță la adresa indicată.<br><br>
+        <b>MONTAJ</b>: echipa noastră este cea care va efectua montajul produselor.<br><br>
+        <b>SERVICII POST-VÂNZARE</b>: chiar dacă produsele au ajuns să fie montate, colaborarea cu clienții noștri nu se termină aici! Dorim să aflăm feedback-ul clientului despre experiența sa cu Marut și să ajutăm clientul răspunzând întrebărilor acestuia. În afară de aceste servicii, ne ocupăm și de reparații, instalarea de plase de insecte, pervaze etc.
+        <br><br></p>
+         <h3>Nu uita: oricâte întrebări ai avea, suntem aici pentru tine!</h3>
+</div>
+<div class="contact-card">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-7">
+              <img class="img-responsive rounded" src="{% static 'images/contactUs.png' %}" />
+          </div>
+          <div class="col-sm-5">
+            <div class="content">
+            <p>
+              Pentru mai multe informații sau nelămuriri legate de serviciile de
+              tâmplărie PVC sau aluminiu, poți lua oricând legătura cu echipa
+              noastră telefonic sau prin e-mail.
+            </p>
+            <a class="btn buton" href="/contact/">Contactează-ne</a>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>
+{% endblock main %}

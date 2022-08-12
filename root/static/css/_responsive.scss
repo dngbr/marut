@@ -20,10 +20,9 @@
             width: 100%;
         }
     }
-    .contact {
+    .contact-card {
         .content {
-            padding-top:2rem!important;
-            padding-left:2rem!important;
+            padding-top: 0.5rem!important;
         }
     }
 }
@@ -35,6 +34,11 @@
         min-height: 10vh;
     }
     .contact {
+        .contact-form {
+            padding:3rem!important;
+        }
+    }
+    .contact-card {
         width: 90%;
         margin:0 auto;
     }

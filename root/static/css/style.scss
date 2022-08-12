@@ -23,6 +23,11 @@ h2 {
     font-weight: bold;
     color: var(--clr-bg-dark);
 }
+h3 {
+    font-size: clamp(1.35rem, 5vw,2rem);
+    font-weight: bold;
+    color: var(--clr-bg-dark);
+}
 p {
     font-size: clamp(0.75rem, 2vw, 1.5rem);
     font-weight: 600;
@@ -63,3 +68,4 @@ p {
 @import 'responsive';
 @import 'about';
 @import 'contact';
+@import 'services';
