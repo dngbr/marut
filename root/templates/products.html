@@ -1,8 +1,51 @@
 {% extends "base.html" %} {% load static %} {% block main %}
 <div class="products-page">
     <div class="container">
-        
+      <div class="row">
+        <div class="col-md-6">
+            <h2 class="text-center">Produsele noastre</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor blanditiis inventore ea, pariatur at sequi ipsam ducimus fuga id. Aliquam eveniet, fuga corporis ipsam
+               ullam inventore laudantium officiis deserunt debitis?</p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/produseleNoastre.png' %}" alt="" class="img-responsive">
+        </div>
     </div>
+    </div>
+</div>
+<div class="products">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-6">
+              <a href="#"><img src="{% static 'images/ferestre.png' %}" alt="" class="img-responsive"></a>
+          </div>
+          <div class="col-sm-6">
+              <a href="#"><img src="{% static 'images/usi.png' %}" alt="" class="img-responsive"></a>
+          </div>
+          <div class="col-sm-6">
+              <a href="#"><img src="{% static 'images/rulouri.png' %}" alt="" class="img-responsive"></a>
+          </div>
+          <div class="col-sm-6">
+              <a href="#"><img src="{% static 'images/accesories.png' %}" alt="" class="img-responsive"></a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="profile">
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="{% static 'images/profile.png' %}" alt="" class="img-responsive">
+      </div>
+        <div class="col-md-6">
+            <h2 class="text-center">Profilele noastre</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor blanditiis inventore ea, pariatur at sequi ipsam ducimus fuga id. Aliquam eveniet, fuga corporis ipsam
+               ullam inventore laudantium officiis deserunt debitis?</p>
+        </div>
+    </div>
+    </div>
+  </div>
 </div>
 <div class="contact-card">
   <div class="container">
@@ -13,7 +56,7 @@
           <div class="col-sm-5">
             <div class="content">
             <p>
-              Pentru mai multe informații sau nelămuriri legate de serviciile de
+              Pentru mai multe informații sau nelămuriri legate de produsele de
               tâmplărie PVC sau aluminiu, poți lua oricând legătura cu echipa
               noastră telefonic sau prin e-mail.
             </p>

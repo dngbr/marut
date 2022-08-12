@@ -141,7 +141,6 @@ p {
 
 .products {
   background-color: var(--clr-bg-light);
-  margin: 2rem 0;
   padding: 2rem 0;
 }
 .products img {
@@ -265,4 +264,73 @@ p {
 .services-page {
   background: var(--clr-bg-light);
   padding: 2rem 0;
+}
+
+.products-page {
+  background: var(--clr-bg-light);
+  padding: 2rem 0;
+}
+
+.profile {
+  padding: 2rem 0;
+}
+
+.blog {
+  background-color: var(--clr-bg-light);
+}
+.blog .banner-blog {
+  background-image: url(../images/banner.png);
+  background-size: 100% 100%;
+  background-position: center;
+  padding-bottom: 7rem;
+}
+.blog .banner-blog h1 {
+  font-size: clamp(2rem, 10vw, 4rem);
+  color: var(--clr-accent-2) !important;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+.blog a {
+  color: black;
+}
+.blog p {
+  font-size: 1rem;
+}
+.blog img {
+  width: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
+}
+.blog .card {
+  border: solid 0.125rem var(--clr-accent);
+}
+.blog .leftcolumn {
+  float: left;
+  width: 50%;
+}
+.blog .rightcolumn {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+}
+.blog .blog-card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  transition: ease-out all 0.5s;
+  box-shadow: 0px 0px 0px grey;
+  -webkit-transition: box-shadow 0.6s ease-out;
+  box-shadow: 2px 2px 3px grey;
+}
+.blog .blog-card img {
+  border: solid 0.125rem var(--clr-accent);
+}
+.blog .blog-card:hover,
+.blog .blog-card:focus {
+  text-decoration: none;
+  color: black;
+  background-color: #f2f2f2;
+  transition: ease-in all 0.3s;
+  box-shadow: 1px 8px 20px grey;
 }/*# sourceMappingURL=style.css.map */
