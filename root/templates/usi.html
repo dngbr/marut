@@ -1,0 +1,54 @@
+{% extends "base.html" %} {% load static %} {% block main %}
+<div class="products-page">
+  <div class="container text-center">
+        <img src="{% static 'images/usi.png' %}" />
+        <h2 style="margin-top: 2rem">
+          De ce să alegi ușile noastre?
+        </h2>
+        <p>
+          <b>1. Profile de siguranță.</b> Caracteristicile de top ale profilelor
+          se regăsesc în calitatea și fiabilitatea ușilor. Materialele folosite,
+          asamblarea atentă și experiența noastră garantează uși de cea mai bună
+          calitate, durabile și perfect adaptabile fiecărui proiect.
+            <br><br>
+          <b>2. Panouri decorative.</b> Varietatea foarte bogată de forme și de
+          design a panourilor decorative face din alegerea imaginii unei uși un
+          adevărat tur de forţă. Orice model de ușă vei alege, aceasta trebuie
+          să răspundă cel mai bine nevoilor de imagine, de siguranţă, de
+          izolare, dar și personalităţii casei tale.
+          <br><br>
+          <b>3. Rigidizare pentru siguranță.</b> Oţel cu grosime de 2-2,5 mm,
+          armătură sudată cu colțar termosudabil pentru ridigizare și siguranţă
+          sporită. Acestea sunt măsurile noastre pentru creșterea rezistenței
+          ușilor și pentru creșterea duratei de viață a produsului pe care îl
+          vei alege.
+          <br><br>
+          <b>4. Praguri din aluminiu cu distanțier termic.</b> Pragurile din
+          aluminiu cu distanțier termic sunt concepute pentru a asigura un acces
+          facil în locuinţă. Pe lângă faptul că fac tranziţia între suprafeţe în
+          mod elegant, aceste praguri rezolvă și micile diferenţe de nivel.
+          Oferă o bună izolare termică, o barieră pentru temperaturile scăzute
+          din exteriorul habitatului și continuă linia de design a fiecărei uși.
+        </p>
+  </div>
+</div>
+<div class="contact-card">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img class="img-responsive rounded" src="{% static 'images/contactUs.png' %}" />
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+              <p>
+                Pentru mai multe informații sau nelămuriri legate de uși, 
+                poți lua oricând legătura cu echipa
+                noastră telefonic sau prin e-mail.
+              </p>
+              <a class="btn buton" href="/contact/">Contactează-ne</a>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+{% endblock main %}

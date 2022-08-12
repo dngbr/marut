@@ -5,3 +5,16 @@
 .profile {
     padding: 2rem 0;
 }
+.products-pages {
+    img {
+        width: 95%;
+        margin:auto 0;
+    }
+}
+.tipuri-rulouri {
+    background-color: var(--clr-bg-light);
+    hr {
+        border-top: 0.2em solid var(--clr-accent-2);
+        width: 100%;
+    }
+}

@@ -8,7 +8,7 @@
                ullam inventore laudantium officiis deserunt debitis?</p>
         </div>
         <div class="col-md-6">
-            <img src="{% static 'images/produseleNoastre.png' %}" alt="" class="img-responsive">
+            <img src="{% static 'images/produseleNoastre.png' %}" alt="" class="img-responsive rounded">
         </div>
     </div>
     </div>
@@ -17,16 +17,16 @@
   <div class="container">
       <div class="row">
           <div class="col-sm-6">
-              <a href="#"><img src="{% static 'images/ferestre.png' %}" alt="" class="img-responsive"></a>
+              <a href="{% url 'ferestre' %}"><img src="{% static 'images/ferestre.png' %}" alt="" class="img-responsive"></a>
           </div>
           <div class="col-sm-6">
-              <a href="#"><img src="{% static 'images/usi.png' %}" alt="" class="img-responsive"></a>
+              <a href="{% url 'usi' %}"><img src="{% static 'images/usi.png' %}" alt="" class="img-responsive"></a>
           </div>
           <div class="col-sm-6">
-              <a href="#"><img src="{% static 'images/rulouri.png' %}" alt="" class="img-responsive"></a>
+              <a href="{% url 'rulouri' %}"><img src="{% static 'images/rulouri.png' %}" alt="" class="img-responsive"></a>
           </div>
           <div class="col-sm-6">
-              <a href="#"><img src="{% static 'images/accesories.png' %}" alt="" class="img-responsive"></a>
+              <a href="{% url 'accesorii' %}"><img src="{% static 'images/accesories.png' %}" alt="" class="img-responsive"></a>
           </div>
       </div>
   </div>
@@ -41,29 +41,11 @@
              ullam inventore laudantium officiis deserunt debitis?</p>
       </div>
         <div class="col-md-6">
-          <img src="{% static 'images/profile.png' %}" alt="" class="img-responsive">
+          <img src="{% static 'images/profile.png' %}" alt="" class="img-responsive rounded">
       </div>
     </div>
     </div>
   </div>
 </div>
-<div class="contact-card">
-  <div class="container">
-      <div class="row">
-          <div class="col-sm-7">
-              <img class="img-responsive rounded" src="{% static 'images/contactUs.png' %}" />
-          </div>
-          <div class="col-sm-5">
-            <div class="content">
-            <p>
-              Pentru mai multe informații sau nelămuriri legate de produsele de
-              tâmplărie PVC sau aluminiu, poți lua oricând legătura cu echipa
-              noastră telefonic sau prin e-mail.
-            </p>
-            <a class="btn buton" href="/contact/">Contactează-ne</a>
-          </div>
-          </div>
-      </div>
-  </div>
-</div>
+
 {% endblock main %}

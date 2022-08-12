@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% load static %} {% block main %}
+<div class="products-pages">
+  <div class="container text-center">
+        <img src="{% static 'images/ferestre.png' %}"/>
+        <h2 style="margin-top: 1rem">
+          De ce să alegi ferestrele noastre?
+        </h2>
+        <p>
+          <b>1. Profil de calitate superioară.</b> Calitatea profilului trebuie
+          să ofere un aport semnificativ pentru produsul finit. Prin calitate
+          superioară înțelegem că profilul va fi fabricat cu materiale (PVC și
+          profil pentru armare) de cea mai bună calitate și va avea în structură
+          un numar cât mai mare de camere de izolare. Pentru ranforsarea
+          profilului se folosește profil din oțel cu grosime mare, ce trebuie să
+          acopere o suprafață cât mai mare în interiorul acestuia.<br><br>
+          <b>2. Geam termoizolant calitativ.</b> Sticla ferestrelor joacă un rol
+          important în tot ansamblul care se fabrică. Fiind vorba despre o
+          suprafață mare și care este, de regulă, expusă atât radiației solare,
+          dar mai ales temperaturii mediului exterior, este necesar ca sticla
+          termopan să fie de calitate. Profilul ales permite montarea unor
+          geamuri termopan duble sau triple.<br><br>
+          <b>3. Feronerie superioară.</b> Mecanismul cu care acționati canatele
+          este cunoscut cu denumirea generică de feronerie. Cu cât aveți nevoie
+          de mai multă flexibiltate pentru manevrare, cu atât feroneria trebuie
+          să fie mai durabilă. Întotdeauna veți avea de ales din cel puțin două
+          mărci de feronerie cu care sa fie echipată tâmplaria din PVC.
+        </p>
+  </div>
+</div>
+<div class="contact-card">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img class="img-responsive rounded" src="{% static 'images/contactUs.png' %}" />
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+              <p>
+                Pentru mai multe informații sau nelămuriri legate de ferestre, 
+                poți lua oricând legătura cu echipa
+                noastră telefonic sau prin e-mail.
+              </p>
+              <a class="btn buton" href="/contact/">Contactează-ne</a>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+{% endblock main %}

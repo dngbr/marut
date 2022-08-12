@@ -35,7 +35,7 @@ h3 {
 }
 
 p {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(0.75rem, 2vw, 1.25rem);
   font-weight: 600;
 }
 
@@ -293,6 +293,19 @@ p {
 
 .profile {
   padding: 2rem 0;
+}
+
+.products-pages img {
+  width: 95%;
+  margin: auto 0;
+}
+
+.tipuri-rulouri {
+  background-color: var(--clr-bg-light);
+}
+.tipuri-rulouri hr {
+  border-top: 0.2em solid var(--clr-accent-2);
+  width: 100%;
 }
 
 .blog {

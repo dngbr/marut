@@ -32,3 +32,15 @@ def blog(request):
 
 def contact(request):
     return render(request, "contact.html", {})
+
+def ferestre(request):
+    return render(request, "ferestre.html", {})
+
+def usi(request):
+    return render(request, "usi.html", {})
+
+def rulouri(request):
+    return render(request, "rulouri.html", {})
+
+def accesorii(request):
+    return render(request, "accesorii.html", {})
