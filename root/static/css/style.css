@@ -229,9 +229,6 @@ p {
   .buton {
     font-size: 0.75rem;
   }
-  .footer-banner {
-    min-height: 10vh;
-  }
   .contact .contact-form {
     padding: 3rem !important;
   }
@@ -240,12 +237,35 @@ p {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 800px) {
+  .contact-card img {
+    width: 80%;
+  }
+  .contact-card p {
+    font-size: 0.85rem !important;
+  }
+  .footer-banner {
+    min-height: 10vh;
+  }
+  .footer img {
+    width: 20%;
+  }
+  .blog-card p {
+    font-size: 0.75rem !important;
+  }
+  .blog-card h3 {
+    font-size: 1.25rem;
+  }
+  .blog-card img {
+    width: 100% !important;
+  }
+}
 .about-page img {
   border: 0.25rem solid var(--clr-accent-2);
 }
 .about-page .carousel {
   width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .contact-card {

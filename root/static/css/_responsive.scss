@@ -30,9 +30,6 @@
     .buton {
         font-size: 0.75rem;
     }
-    .footer-banner {
-        min-height: 10vh;
-    }
     .contact {
         .contact-form {
             padding:3rem!important;
@@ -40,6 +37,35 @@
     }
     .contact-card {
         width: 90%;
-        margin:0 auto;
+        margin:0 auto; 
+    }
+}
+@media screen and (max-width:800px) {
+    .contact-card {
+        img {
+            width: 80%;
+        }
+        p {
+            font-size: 0.85rem!important;
+        }
+    }
+    .footer-banner {
+        min-height: 10vh;
+    }
+    .footer {
+        img {
+            width: 20%;
+        }
+    }
+    .blog-card {
+        p {
+            font-size: 0.75rem!important;
+        }
+        h3 {
+            font-size: 1.25rem;
+        }
+        img {
+            width: 100%!important;
+        }
     }
 }
