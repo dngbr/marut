@@ -224,6 +224,9 @@ p {
   .contact-card .content {
     padding-top: 0.5rem !important;
   }
+  .title {
+    margin-top: 1rem !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .buton {
@@ -342,6 +345,10 @@ p {
 .profile-card:hover .content-r,
 .profile-card:focus .content-r {
   filter: brightness(0.8);
+}
+
+.title {
+  margin-top: 5rem;
 }
 
 .blog {
