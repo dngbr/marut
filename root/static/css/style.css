@@ -308,6 +308,42 @@ p {
   width: 100%;
 }
 
+.profile-card {
+  margin: 1rem auto;
+  width: 75%;
+  background-color: var(--clr-bg-light);
+  border: 0.25em solid var(--clr-accent-2);
+}
+.profile-card img {
+  transition: ease-in all 0.3s;
+  width: 50%;
+  margin: 0 auto;
+}
+.profile-card .content {
+  max-width: 100%;
+  transition: ease-in all 0.3s;
+  background-color: var(--clr-bg-dark);
+}
+.profile-card .content h2 {
+  color: #ffe25b;
+  font-weight: bold;
+}
+
+.profile-card:hover,
+.profile-card:focus {
+  background-color: #cccccc;
+  transition: ease-in all 0.3s;
+  text-decoration: none;
+}
+.profile-card:hover img,
+.profile-card:focus img {
+  filter: brightness(0.8);
+}
+.profile-card:hover .content-r,
+.profile-card:focus .content-r {
+  filter: brightness(0.8);
+}
+
 .blog {
   background-color: var(--clr-bg-light);
 }

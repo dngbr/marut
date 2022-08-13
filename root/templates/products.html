@@ -33,19 +33,55 @@
 </div>
 <div class="profile">
   <div class="container">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="text-center">Profilele noastre</h2>
-          <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor blanditiis inventore ea, pariatur at sequi ipsam ducimus fuga id. Aliquam eveniet, fuga corporis ipsam
-             ullam inventore laudantium officiis deserunt debitis?</p>
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="text-center">Profilele noastre</h2>
+        <p>
+          Profile inventate de companii cu experiență, companii ce
+          prioritizează creativitatea și inovația: Aluplast și Rehau. Acestea
+          sunt companiile a căror produse am ales să le folosim.
+        </p>
       </div>
-        <div class="col-md-6">
-          <img src="{% static 'images/profile.png' %}" alt="" class="img-responsive rounded">
+      <div class="col-md-6">
+        <img src="{% static 'images/profile.png' %}" class="img-responsive rounded"/>
       </div>
     </div>
+    <div class="row align-items-center no-gutters">
+      <div class="col-lg-6">
+        <a class="card profile-card" href="/aluplast/">
+          <img src="{% static 'images/aluplast.png' %}" />
+          <div class="content">
+            <h2 class="text-center">Aluplast70</h2>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="card profile-card" href="/eurodesign/">
+          <img src="{% static 'images/rehau.png' %}" />
+          <div class="content">
+            <h2 class="text-center">Rehau Euro70</h2>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="card profile-card" href="/synego/">
+          <img src="{% static 'images/synego.png' %}" />
+          <div class="content">
+            <h2 class="text-center">Rehau Synego</h2>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="card profile-card" href="/geneo/">
+          <img src="{% static 'images/geneo.png' %}" />
+          <div class="content">
+            <h2 class="text-center">Rehau Geneo</h2>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
+
 
 {% endblock main %}
