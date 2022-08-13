@@ -127,8 +127,8 @@ li {
 }
 .banner .carousel .carousel-item {
   background-image: url(../images/produse.jpg);
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .banner .carousel .content {
   background-color: rgba(18, 21, 60, 0.7176470588);
