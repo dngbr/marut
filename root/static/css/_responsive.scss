@@ -47,6 +47,17 @@
         width: 90%;
         margin:0 auto; 
     }
+    .blog {
+        .leftcolumn,
+        .rightcolumn {
+            width: 100%!important;
+            padding: 0!important;
+        }
+        .blog-card {
+            width: 90%;
+            margin:0 auto;
+        }
+    }
 }
 @media screen and (max-width:800px) {
     .contact-card {

@@ -264,6 +264,15 @@ li {
     width: 90%;
     margin: 0 auto;
   }
+  .blog .leftcolumn,
+.blog .rightcolumn {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .blog .blog-card {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 800px) {
   .contact-card img {
@@ -411,8 +420,8 @@ li {
   border: solid 0.125rem var(--clr-accent);
 }
 .blog .leftcolumn {
-  float: left;
   width: 50%;
+  float: left;
 }
 .blog .rightcolumn {
   float: left;

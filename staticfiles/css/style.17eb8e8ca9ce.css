@@ -141,7 +141,6 @@ p {
 
 .products {
   background-color: var(--clr-bg-light);
-  margin: 2rem 0;
   padding: 2rem 0;
 }
 .products img {
@@ -162,6 +161,19 @@ p {
   background-color: var(--clr-bg-dark);
   border-radius: 3rem;
   padding: 4rem;
+}
+.contact .date-de-contact {
+  background-color: var(--clr-accent);
+  border-radius: 2rem;
+}
+.contact .date-de-contact .ceo {
+  width: 60%;
+}
+.contact .date-de-contact a {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--clr-bg-dark);
+  font-weight: 800;
 }
 
 .review {
@@ -225,20 +237,55 @@ p {
   .contact-card .content {
     padding-top: 0.5rem !important;
   }
+  .title {
+    margin-top: 1rem !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .buton {
     font-size: 0.75rem;
   }
-  .footer-banner {
-    min-height: 10vh;
+  .contact {
+    margin-top: 2rem;
   }
   .contact .contact-form {
     padding: 3rem !important;
   }
+  .contact .date-de-contact {
+    width: 90%;
+    margin: 0 auto;
+  }
   .contact-card {
     width: 90%;
     margin: 0 auto;
+  }
+  .blog .leftcolumn,
+.blog .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact-card img {
+    width: 80%;
+  }
+  .contact-card p {
+    font-size: 0.85rem !important;
+  }
+  .footer-banner {
+    min-height: 10vh;
+  }
+  .footer img {
+    width: 20%;
+  }
+  .blog-card p {
+    font-size: 0.75rem !important;
+  }
+  .blog-card h3 {
+    font-size: 1.25rem;
+  }
+  .blog-card img {
+    width: 100% !important;
   }
 }
 .about-page img {
@@ -246,10 +293,11 @@ p {
 }
 .about-page .carousel {
   width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .contact-card {
+  margin-top: 4rem;
   margin-bottom: 3rem;
 }
 .contact-card .row {
@@ -258,7 +306,7 @@ p {
   overflow: hidden;
 }
 .contact-card .content {
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 
 .services-page {
