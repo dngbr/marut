@@ -32,6 +32,10 @@ p {
     font-size: clamp(0.75rem, 2vw, 1.25rem);
     font-weight: 600;
 }
+li {
+    font-size: clamp(0.75rem, 2vw, 1.25rem);
+    font-weight: 600;
+}
 .buton {
     padding: 0.65rem 1rem;
     background-color: var(--clr-bg-dark);
@@ -71,3 +75,4 @@ p {
 @import 'services';
 @import 'products';
 @import 'blog';
+@import 'articol';

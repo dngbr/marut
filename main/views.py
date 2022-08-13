@@ -56,3 +56,36 @@ def synego(request):
 
 def geneo(request):
     return render(request, "geneo.html", {})
+
+
+def articol1(request):
+    return render(request, "articol1.html", {})
+
+def articol2(request):
+    return render(request, "articol2.html", {})
+
+def articol3(request):
+    return render(request, "articol3.html", {})
+    
+def articol4(request):
+    return render(request, "articol4.html", {})
+
+def articol5(request):
+    return render(request, "articol5.html", {})
+
+def articol6(request):
+    return render(request, "articol6.html", {})
+    
+def articol7(request):
+    return render(request, "articol7.html", {})
+    
+def articol8(request):
+    return render(request, "articol8.html", {})
+
+    
+def articol9(request):
+    return render(request, "articol9.html", {})
+    
+def articol10(request):
+    return render(request, "articol10.html", {})
+

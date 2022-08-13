@@ -39,6 +39,11 @@ p {
   font-weight: 600;
 }
 
+li {
+  font-size: clamp(0.75rem, 2vw, 1.25rem);
+  font-weight: 600;
+}
+
 .buton {
   padding: 0.65rem 1rem;
   background-color: var(--clr-bg-dark);
@@ -351,6 +356,10 @@ p {
   margin-top: 4rem;
 }
 
+.title2 {
+  margin: 1rem auto;
+}
+
 .blog {
   background-color: var(--clr-bg-light);
 }
@@ -406,4 +415,11 @@ p {
   background-color: #f2f2f2;
   transition: ease-in all 0.3s;
   box-shadow: 1px 8px 20px grey;
+}
+
+.articol img {
+  margin-top: 1rem;
+}
+.articol h2 {
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */
