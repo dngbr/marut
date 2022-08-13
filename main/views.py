@@ -6,7 +6,6 @@ def home(request):
     if request.method == "POST":
         form = EmailForm(request.POST)
         if form.is_valid():
-            form.save()
             send_mail(
                 'Message from ' + form.cleaned_data['nume'] +
                 ' (telefon: ' + form.cleaned_data['telefon'] + '| email: ' + form.cleaned_data['email'] + ')',  # subiect
@@ -34,7 +33,6 @@ def contact(request):
     if request.method == "POST":
         form = EmailForm(request.POST)
         if form.is_valid():
-            form.save()
             send_mail(
                 'Message from ' + form.cleaned_data['nume'] +
                 ' (telefon: ' + form.cleaned_data['telefon'] + '| email: ' + form.cleaned_data['email'] + ')',  # subiect
