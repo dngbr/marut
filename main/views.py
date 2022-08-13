@@ -44,3 +44,15 @@ def rulouri(request):
 
 def accesorii(request):
     return render(request, "accesorii.html", {})
+
+def aluplast(request):
+    return render(request, "aluplast.html", {})
+
+def euro(request):
+    return render(request, "euro.html", {})
+
+def synego(request):
+    return render(request, "synego.html", {})
+
+def geneo(request):
+    return render(request, "geneo.html", {})

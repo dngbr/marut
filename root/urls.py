@@ -29,4 +29,8 @@ urlpatterns = [
     path('usi/', views.usi, name="usi"),
     path('rulouri/', views.rulouri, name="rulouri"),
     path('accesorii/', views.accesorii, name="accesorii"),
+    path('aluplast/', views.aluplast, name="aluplast"),
+    path('euro/', views.euro, name="euro"),
+    path('synego/', views.synego, name="synego"),
+    path('geneo/', views.geneo, name="geneo"),
 ]
