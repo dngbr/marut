@@ -78,6 +78,19 @@
         border-radius: 3rem;
         padding:4rem;
     }
+    .date-de-contact {
+        background-color: var(--clr-accent);
+        border-radius: 2rem;
+        .ceo {
+            width: 60%;
+        }
+        a {
+            font-size: 1.25rem;
+            line-height: 1.25;
+            color: var(--clr-bg-dark);
+            font-weight: 800;
+        }
+    }
 }
 .review {
     margin: 2rem 0;

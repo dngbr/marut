@@ -1,0 +1,73 @@
+{% extends "base.html" %} {% load static %} {% block main %}
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 date-de-contact text-center">
+                <h2>Date de contact</h2>
+                <a href="mailto:suport.marut@gmail.com"
+              >Email: suport.marut@gmail.com </a
+            ><br />
+            <a
+              href="tel:+40-771-420-554"
+              data-tracking-element-type="3"
+              jslog="56037; track:impression,click"
+              itemprop="telephone"
+              dir="ltr"
+              >Telefon: 0771.420.554</a
+            ><br />
+
+            <a
+              href="https://goo.gl/maps/WHejeYgqQGA35mir5"
+              target="_blank"
+              data-tracking-element-type="6"
+              jslog="56039; track:impression,click"
+              >Adresa: Turda, Cluj</a
+            ><br>
+                <img src="{% static 'images/razvanCrop.png' %}" alt="" class="img-responsive ceo">
+            </div>
+            <div class="col-lg-6">
+                <p>
+                  Ai întrebări despre unele produse / despre accesorii / garanție? 
+                  Ai nevoie de consultanță în acest domeniu și nu știi la cine să apelezi? 
+                  Nu ezita să ne scrii și noi îți vom răspunde în cel mai scurt timp posibil!
+                </p>
+                <form action="{% url 'contact' %}" method="post" id="contact" class="contact-form">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <input type="submit" value="Trimite" class="btn buton2">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="margin:2rem auto; padding:2rem;background-color:var(--clr-bg-light)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h3>
+          Urmărește-ne pe
+          <a href="https://www.facebook.com/marutplast/" target="_blank"
+            >facebook</a
+          >
+          și
+          <a href="https://www.instagram.com/marutplast/" target="_blank"
+            >instagram</a
+          >!
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43893.962329172!2d23.777278312729205!3d46.56009570699932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47496620aa78a95b%3A0xc7f433dbd893f8a3!2sTurda!5e0!3m2!1sen!2sro!4v1659203078008!5m2!1sen!2sro"
+          style="border: 0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          width="100%"
+          height="400px"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock main %}

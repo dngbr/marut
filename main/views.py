@@ -31,7 +31,20 @@ def blog(request):
     return render(request, "blog.html", {})
 
 def contact(request):
-    return render(request, "contact.html", {})
+    if request.method == "POST":
+        form = EmailForm(request.POST)
+        if form.is_valid():
+            form.save()
+            send_mail(
+                'Message from ' + form.cleaned_data['nume'] +
+                ' (telefon: ' + form.cleaned_data['telefon'] + '| email: ' + form.cleaned_data['email'] + ')',  # subiect
+                form.cleaned_data['mesaj'],  # mesaj
+                form.cleaned_data['email'],  # from email
+                ['suport.marut@gmail.com', 'gabrieldan2399@gmail.com',
+                    'razvan_felecan@yahoo.com'],  # to email
+            )
+    form = EmailForm
+    return render(request, "contact.html", {'form':form})
 
 def ferestre(request):
     return render(request, "ferestre.html", {})
