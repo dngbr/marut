@@ -100,3 +100,11 @@ def articol9(request):
 def articol10(request):
     return render(request, "articol10.html", {})
 
+def termeni(request):
+    return render(request, "termeni.html", {})
+    
+def utilizare(request):
+    return render(request, "utilizare.html", {})
+
+def protectie(request):
+    return render(request, "protectie.html", {})

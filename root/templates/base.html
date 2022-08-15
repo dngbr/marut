@@ -150,7 +150,7 @@
     <!-- REVIEWs -->
     <div class="review">
         <div class="container text-center">
-            <h2 class="title text-center">Review-urile clientilor nostrii</h2>
+            <h2 class="title text-center">Review-urile clienților noștri</h2>
             <img src="{% static 'images/review.png' %}" alt="" class="img-responsive text-center">
         </div>
     </div>
@@ -171,9 +171,10 @@
                     <!--<a href="/blog/">Blog</a><br />-->
                 </div>
                 <div class="col-md-3 text-center">
-                    <!--<a href="/termeni/">Termeni și condiții</a><br />-->
-                    <!--<a href="/cookies/">Politică cookies</a><br />-->
-                    <a href="https://anpc.ro/" target="_blank">ANPC</a>
+                    <a href="{% url 'termeni' %}">Termeni și Condiții</a><br />
+                    <a href="{% url 'utilizare' %}">Politică Cookies</a><br />
+                    <a href="{% url 'protectie' %}">Protecție Date</a><br />
+                    <a href="https://anpc.ro/" target="_blank">ANPC</a><br>
                 </div>
                 <div class="col-md-3 text-center">
                     <a href="{% url 'contact' %}">Date de contact</a><br />
