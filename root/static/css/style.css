@@ -94,7 +94,7 @@ ol {
   margin: 0 auto;
 }
 .navbar .logo {
-  width: 90%;
+  width: 80%;
 }
 .navbar .nav-link {
   color: var(--clr-text);
@@ -250,6 +250,9 @@ ol {
   }
 }
 @media screen and (max-width: 600px) {
+  .navbar .logo {
+    width: 66%;
+  }
   .buton {
     font-size: 0.75rem;
   }

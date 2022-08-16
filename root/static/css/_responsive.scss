@@ -30,6 +30,11 @@
     }
 }
 @media screen and (max-width:600px) {
+    .navbar {
+        .logo {
+            width: 66%;
+        }
+    }
     .buton {
         font-size: 0.75rem;
     }

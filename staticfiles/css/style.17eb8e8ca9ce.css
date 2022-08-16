@@ -84,12 +84,11 @@ p {
   margin: 0 auto;
 }
 .navbar .logo {
-  width: 90%;
+  width: 80%;
 }
 .navbar .nav-link {
   color: var(--clr-text);
   font-size: 1.2rem;
-  text-shadow: 1px 1px 1px black;
   font-weight: 600;
 }
 .navbar .nav-link:hover,
@@ -122,8 +121,7 @@ p {
 }
 .banner .carousel .carousel-item {
   background-image: url(../images/produse.jpg);
-  -o-object-fit: contain;
-     object-fit: contain;
+  background-size: 100% 100%;
 }
 .banner .carousel .content {
   background-color: rgba(18, 21, 60, 0.7176470588);
@@ -242,6 +240,9 @@ p {
   }
 }
 @media screen and (max-width: 600px) {
+  .navbar .logo {
+    width: 50%;
+  }
   .buton {
     font-size: 0.75rem;
   }
