@@ -108,3 +108,6 @@ def utilizare(request):
 
 def protectie(request):
     return render(request, "protectie.html", {})
+
+def a():
+    pass
