@@ -111,3 +111,6 @@ def protectie(request):
 
 def a():
     pass
+
+def b():
+    pass
