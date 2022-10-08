@@ -28,7 +28,7 @@
     <!-- STYLE.CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <title>Marut</title>
-    <script src="{% static 'js/cookies.js' %}"></script>
+    <!-- <script src="{% static 'js/cookies.js' %}"></script> -->
 </head>
 
 <body>
@@ -103,6 +103,12 @@
             left:15%; 
             color:white; 
             padding:1rem;
+        }
+        @media screen and (max-width:600px) {
+            .cookie-consent {
+                left:5%;
+                max-width: 90%;
+            }
         }
     </style>
     <div id="cookieNotice" class="cookie-consent container">
