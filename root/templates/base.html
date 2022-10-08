@@ -28,6 +28,7 @@
     <!-- STYLE.CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <title>Marut</title>
+    <script src="{% static 'js/cookies.js' %}"></script>
 </head>
 
 <body>
@@ -35,37 +36,37 @@
    <!--navbar-->
    <div class="navbar-container">  
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="/"><img alt="Brand" src="{% static 'images/logo.png' %}" class="logo"/></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span><img src="{% static 'images/menu.png' %}" /></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="{% url 'home' %}" class="nav-link">Acasă</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{% url 'about' %}" class="nav-link">Despre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{% url 'services' %}" class="nav-link">Servicii</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{% url 'products' %}" class="nav-link">Produse</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{% url 'blog' %}" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{% url 'contact' %}" class="nav-link">Contact</a>
-                    </li>
-                </ul>
+            <div class="container">
+                <a class="navbar-brand" href="/"><img alt="Brand" src="{% static 'images/logo.png' %}" class="logo"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="{% static 'images/menu.png' %}" /></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="{% url 'home' %}" class="nav-link">Acasă</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'about' %}" class="nav-link">Despre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'services' %}" class="nav-link">Servicii</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'products' %}" class="nav-link">Produse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'blog' %}" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</div>
+        </nav>
+    </div>
     {% block main %}
     <!-- BANNER -->
     <div class="banner">
@@ -89,6 +90,25 @@
                 </div>
             </div>
         </div>
+    </div>
+    <style>
+        .cookie-consent {
+            font-size:1rem; 
+            position:fixed; 
+            bottom:1%; 
+            background: #292929df;
+            z-index: 120;
+            border-radius: 5px;
+            max-width: 70%; 
+            left:15%; 
+            color:white; 
+            padding:1rem;
+        }
+    </style>
+    <div id="cookieNotice" class="cookie-consent container">
+        <span>Acest site folosește cookies pentru a îmbunătăți experiența utilizatorului. 
+        Vezi și<a href="{% url 'utilizare' %}" class="ml-1 text-decoration-none">Politică cookies</a> .
+        <button type="button" class="btn btn-success" onclick="acceptCookieConsent()">Acceptă cookies</button></span>
     </div>
     <!--about us -->
     <div class="about">
