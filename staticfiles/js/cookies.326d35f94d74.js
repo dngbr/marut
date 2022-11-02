@@ -1,21 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // ...
     console.log('aaaaaaaa')
-    console.log(sessionStorage["PopupShown"])
+    $('#myModal').modal('show')
+ });
 
-    if(sessionStorage["PopupShown"] != 'yes'){ 
-        $("#myModal").modal('show');
-        // e.preventDefault();
-    }
-    // $('#myModal').modal('show')
-});
-
-$("#closeNews").click(function (e)
-{
-    e.preventDefault();
-    sessionStorage["PopupShown"] = 'yes'; //Save in the sessionStorage if the modal has been shown
-    console.log(sessionStorage["PopupShown"])
-});
 
 // Create cookie
 function setCookie(cname, cvalue, exdays) {

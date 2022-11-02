@@ -1,21 +1,39 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // ...
-    console.log('aaaaaaaa')
-    console.log(sessionStorage["PopupShown"])
-
-    if(sessionStorage["PopupShown"] != 'yes'){ 
-        $("#myModal").modal('show');
-        // e.preventDefault();
-    }
-    // $('#myModal').modal('show')
-});
-
 $("#closeNews").click(function (e)
 {
+    $("#myModal").hide();
     e.preventDefault();
     sessionStorage["PopupShown"] = 'yes'; //Save in the sessionStorage if the modal has been shown
-    console.log(sessionStorage["PopupShown"])
 });
+
+$("#allowCookies").click(function (e)
+{
+    $("#cookie").hide();
+    e.preventDefault();
+    sessionStorage["PopupCookie"] = 'yes'; //Save in the sessionStorage if the modal has been shown
+})
+
+document.addEventListener('DOMContentLoaded', function() {
+    // ...
+    // console.log('aaaaaaaa')
+    // console.log(sessionStorage["PopupShown"])
+    // console.log(sessionStorage["PopupCookie"])
+
+    $("#myModal").modal('show');
+
+    // if(sessionStorage["PopupShown"] != 'yes'){ 
+    //     $("#myModal").modal('show');
+    //     e.preventDefault();
+    // }
+
+    // if(sessionStorage["PopupCookie"] != 'yes'){
+    //     $("#cookie").show();
+    //     e.preventDefault();
+    // }
+    // else {
+    //     $("#cookie").hide();
+    // }
+ });
+
 
 // Create cookie
 function setCookie(cname, cvalue, exdays) {
