@@ -1,0 +1,95 @@
+@media screen and (max-width:990px) {
+    .navbar {
+        width: 100%;
+    }
+    .banner {
+        padding-bottom: 5rem;
+        .carousel {
+            padding: 1rem 1rem;
+            width: 100%;
+            h2 {
+                padding-top: 1rem;
+            }
+        }
+    }
+    .about {
+        width: 100%;
+    }
+    .review {
+        img {
+            width: 100%;
+        }
+    }
+    .contact-card {
+        .content {
+            padding-top: 0.5rem!important;
+        }
+    }
+    .title {
+        margin-top: 1rem!important;
+    }
+}
+@media screen and (max-width:600px) {
+    .navbar {
+        .logo {
+            width: 66%;
+        }
+    }
+    .buton {
+        font-size: 0.75rem;
+    }
+    .contact {
+        margin-top: 2rem;
+        .contact-form {
+            padding:3rem!important;
+        }
+        .date-de-contact {
+            width: 90%;
+            margin:0 auto;
+        }
+    }
+    .contact-card {
+        width: 90%;
+        margin:0 auto; 
+    }
+    .blog {
+        .leftcolumn,
+        .rightcolumn {
+            width: 100%!important;
+            padding: 0!important;
+        }
+        .blog-card {
+            width: 90%;
+            margin:0 auto;
+        }
+    }
+}
+@media screen and (max-width:800px) {
+    .contact-card {
+        img {
+            width: 80%;
+        }
+        p {
+            font-size: 0.85rem!important;
+        }
+    }
+    .footer-banner {
+        min-height: 10vh;
+    }
+    .footer {
+        img {
+            width: 20%;
+        }
+    }
+    .blog-card {
+        p {
+            font-size: 0.75rem!important;
+        }
+        h3 {
+            font-size: 1.25rem;
+        }
+        img {
+            width: 100%!important;
+        }
+    }
+}
