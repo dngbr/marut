@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     // ...
     console.log('aaaaaaaa')
-    console.log(sessionStorage["PopupShown"])
+    sessionStorage.setItem("news","yes");
+    console.log(sessionStorage["news"]);
 
     if(sessionStorage["PopupShown"] != 'yes'){ 
         $("#myModal").modal('show');
@@ -10,12 +11,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // $('#myModal').modal('show')
 });
 
-$("#closeNews").click(function (e)
-{
-    e.preventDefault();
-    sessionStorage["PopupShown"] = 'yes'; //Save in the sessionStorage if the modal has been shown
-    console.log(sessionStorage["PopupShown"])
-});
+// $("#closeNews").click(function ()
+// {
+//     // sessionStorage["PopupShown"] = 'yes'; //Save in the sessionStorage if the modal has been shown
+//     sessionStorage.setItem("news","yes");
+//     console.log(sessionStorage);
+// });
+function closeNews(){
+    sessionStorage.setItem("news","yes");
+    console.log(sessionStorage["news"]);
+    $("#myModal").hide();
+}
+
 
 // Create cookie
 function setCookie(cname, cvalue, exdays) {

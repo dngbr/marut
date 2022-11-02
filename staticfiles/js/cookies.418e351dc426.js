@@ -19,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // });
 function closeNews(){
     sessionStorage.setItem("news","yes");
-    console.log(sessionStorage["news"]);
-    $("#myModal").hide();
 }
 
 
